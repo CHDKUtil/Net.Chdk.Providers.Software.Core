@@ -1,9 +1,11 @@
-﻿using Net.Chdk.Model.Software;
+﻿using Net.Chdk.Model.Camera;
+using Net.Chdk.Model.CameraModel;
+using Net.Chdk.Model.Software;
 
 namespace Net.Chdk.Providers.Software
 {
     public interface ICameraProvider
     {
-        CameraInfo GetCamera(Model.Camera.CameraInfo cameraInfo, Model.CameraModel.CameraModelInfo cameraModelInfo);
+        SoftwareCameraInfo GetCamera(CameraInfo cameraInfo, CameraModelInfo cameraModelInfo);
     }
 }
