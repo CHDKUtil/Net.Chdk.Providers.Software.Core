@@ -1,9 +1,10 @@
 ﻿using Net.Chdk.Model.Software;
+using System.Collections.Generic;
 
 namespace Net.Chdk.Providers.Software
 {
     public interface ISourceProvider
     {
-        SoftwareSourceInfo GetSource(SoftwareProductInfo product, string sourceName, string channelName);
+        IEnumerable<SoftwareSourceInfo> GetSources(SoftwareProductInfo product, string sourceName);
     }
 }
