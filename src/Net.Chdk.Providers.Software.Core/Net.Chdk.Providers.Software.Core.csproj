@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ICameraProvider.cs" />
+    <Compile Include="ISoftwareHashProvider.cs" />
     <Compile Include="ISourceProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
