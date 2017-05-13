@@ -51,6 +51,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CameraModel.cs" />
     <Compile Include="ICameraProvider.cs" />
     <Compile Include="IProductSourceProvider.cs" />
     <Compile Include="ISoftwareHashProvider.cs" />
