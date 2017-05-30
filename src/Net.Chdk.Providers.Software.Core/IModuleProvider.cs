@@ -2,7 +2,7 @@
 
 namespace Net.Chdk.Providers.Software
 {
-    public interface IModulesProvider
+    public interface IModuleProvider
     {
         string Path { get; }
         string Extension { get; }

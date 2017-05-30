@@ -73,8 +73,8 @@
   <ItemGroup>
     <Compile Include="ICameraProvider.cs" />
     <Compile Include="IEncodingProvider.cs" />
-    <Compile Include="IModulesProvider.cs" />
-    <Compile Include="IModulesProviderResolver.cs" />
+    <Compile Include="IModuleProvider.cs" />
+    <Compile Include="IModuleProviderResolver.cs" />
     <Compile Include="IProductSourceProvider.cs" />
     <Compile Include="ISoftwareHashProvider.cs" />
     <Compile Include="ISourceProvider.cs" />
