@@ -7,5 +7,6 @@
 
         string GetModuleName(string filePath);
         string GetModuleTitle(string name);
+        string GetModuleId(string name);
     }
 }
