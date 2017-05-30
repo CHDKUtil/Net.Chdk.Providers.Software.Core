@@ -7,5 +7,7 @@ namespace Net.Chdk.Providers.Software
         string Path { get; }
         string Extension { get; }
         IDictionary<string, ModuleData> Children { get; }
+
+        string GetModuleName(string filePath);
     }
 }
