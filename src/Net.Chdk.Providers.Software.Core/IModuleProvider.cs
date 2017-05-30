@@ -9,5 +9,6 @@ namespace Net.Chdk.Providers.Software
         IDictionary<string, ModuleData> Children { get; }
 
         string GetModuleName(string filePath);
+        string GetModuleTitle(string name);
     }
 }
