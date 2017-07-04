@@ -6,9 +6,8 @@ namespace Net.Chdk.Providers.Software
 {
     public interface IProductSourceProvider
     {
-        string ProductName { get; }
-        IEnumerable<KeyValuePair<string, SoftwareSourceInfo>> GetSources(CategoryInfo category);
-        IEnumerable<KeyValuePair<string, SoftwareSourceInfo>> GetSources(SoftwareProductInfo product);
+        IEnumerable<ProductSource> GetSources(CategoryInfo category);
+        IEnumerable<ProductSource> GetSources(SoftwareProductInfo product);
         IEnumerable<SoftwareSourceInfo> GetSources(SoftwareProductInfo product, string sourceName);
     }
 }
