@@ -2,11 +2,10 @@
 {
     public interface IModuleProvider
     {
-        string Path { get; }
-        string Extension { get; }
-
-        string GetModuleName(string filePath);
-        string GetModuleTitle(string name);
-        string GetModuleId(string name);
+        string GetPath(string productName);
+        string GetExtension(string productName);
+        string GetModuleName(string productName, string filePath);
+        string GetModuleTitle(string productName, string moduleName);
+        string GetModuleId(string productName, string moduleName);
     }
 }
