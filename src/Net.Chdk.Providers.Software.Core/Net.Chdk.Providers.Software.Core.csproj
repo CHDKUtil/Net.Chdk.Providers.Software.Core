@@ -3,13 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
     <Description>CHIMP software providers API</Description>
-    <AssemblyName>Net.Chdk.Providers.Software.Core</AssemblyName>
     <RootNamespace>Net.Chdk.Providers.Software</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>0.3.1</Version>
+    <Version>0.4.0</Version>
     <Product>CHIMP</Product>
+    <Authors>Dmitry Shechtman</Authors>
     <Copyright>Copyright © 2017 Dmitry Shechtman</Copyright>
   </PropertyGroup>
 
@@ -17,7 +17,6 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Net.Chdk.Providers.Software.Core</Title>
     <PackageVersion>$(Version)-alpha</PackageVersion>
-    <Authors>Dmitry Shechtman</Authors>
     <PackageIconUrl>https://raw.githubusercontent.com/CHDKUtil/CHIMP/master/tiny.png</PackageIconUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/CHDKUtil/Net.Chdk.Providers.Software.Core/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/CHDKUtil/Net.Chdk.Providers.Software.Core</PackageProjectUrl>
@@ -37,7 +36,7 @@
 
   <ItemGroup>
     <PackageReference Include="Net.Chdk.Model.Category" Version="0.1.0-alpha" />
-    <PackageReference Include="Net.Chdk.Model.Software" Version="0.1.0-alpha" />
+    <PackageReference Include="Net.Chdk.Model.Software" Version="0.2.0-alpha" />
   </ItemGroup>
 
 </Project>
