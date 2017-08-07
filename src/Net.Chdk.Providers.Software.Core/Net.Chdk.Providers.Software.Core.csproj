@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>0.4.0</Version>
+    <Version>0.5.0</Version>
+    <VersionSuffix>alpha</VersionSuffix>
     <Product>CHIMP</Product>
     <Authors>Dmitry Shechtman</Authors>
     <Copyright>Copyright © 2017 Dmitry Shechtman</Copyright>
@@ -16,7 +17,7 @@
   <PropertyGroup>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Net.Chdk.Providers.Software.Core</Title>
-    <PackageVersion>$(Version)-alpha</PackageVersion>
+    <PackageVersion>$(Version)-$(VersionSuffix)</PackageVersion>
     <PackageIconUrl>https://raw.githubusercontent.com/CHDKUtil/CHIMP/master/tiny.png</PackageIconUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/CHDKUtil/Net.Chdk.Providers.Software.Core/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/CHDKUtil/Net.Chdk.Providers.Software.Core</PackageProjectUrl>
@@ -24,19 +25,14 @@
     <PackageTags>chimp provider software core</PackageTags>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-    <TreatSpecificWarningsAsErrors />
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  <PropertyGroup>
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
     <TreatSpecificWarningsAsErrors />
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Net.Chdk.Model.Category" Version="0.1.0-alpha" />
-    <PackageReference Include="Net.Chdk.Model.Software" Version="0.2.0-alpha" />
+    <PackageReference Include="Net.Chdk.Model.Software" Version="0.2.1-alpha" />
   </ItemGroup>
 
 </Project>
